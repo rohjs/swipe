@@ -36,7 +36,7 @@ export function createThemedTemplate<P>(
       defaultValue: 'light',
       control: {
         type: 'inline-radio',
-        options: ['light', 'dark']
+        options: ['light']
       }
     }
   }
