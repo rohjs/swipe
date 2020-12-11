@@ -6,6 +6,7 @@ export type GrayscaleColors =
   | 'secondary'
   | 'tertiary'
   | 'lightGray'
+  | 'white'
 
 export type UiColors = 'navy' | 'blue' | 'green' | 'orange' | 'yellow'
 
@@ -16,6 +17,8 @@ export type TypeScales =
   | 'base'
   | 'medium'
   | 'large'
+
+export type FontWeights = 'normal' | 'medium' | 'bold' | 'heavy'
 
 export interface BaseTheme {
   colors: {
