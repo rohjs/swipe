@@ -1,0 +1,93 @@
+// Grayscales
+export const grayscaleBlack = '#000000'
+export const grayscaleDark = '#1B1C32'
+export const grayscalePrimary = '#3F4150'
+export const grayscaleSecondary = '#858896'
+export const grayscaleTertiary = '#E0E2E7'
+export const grayscaleLightGray = '#F4F5FA'
+export const grayscaleWhite = '#FFFFFF'
+export const grayscales = {
+  black: grayscaleBlack,
+  dark: grayscaleDark,
+  primary: grayscalePrimary,
+  secondary: grayscaleSecondary,
+  tertiary: grayscaleTertiary,
+  lightGray: grayscaleLightGray,
+  white: grayscaleWhite
+}
+
+// UI Colors
+export const navyBase = '#0052CC'
+export const navyLight = '#D9E5F8'
+export const navyDim = 'rgba(0, 82, 204, 0.15)'
+
+export const blueBase = '#0086FF'
+export const blueLight = '#D9EDFF'
+export const blueDim = 'rgba(0, 134, 255, 0.15)'
+
+export const greenBase = '#22C58B'
+export const greenLight = '#DBF6EC'
+export const greenDim = 'rgba(34, 197, 139, 0.15)'
+
+export const orangeBase = '#E95432'
+export const orangeLight = '#FCE6E0'
+export const orangeDim = 'rgba(233, 84, 50, 0.15)'
+
+export const yellowBase = '#FCBC1D'
+export const yellowLight = '#FFF5DD'
+export const yellowDim = 'rgba(252, 188, 29, 0.15)'
+
+export const uiColors = {
+  navy: { base: navyBase, light: navyLight, dim: navyDim },
+  blue: { base: blueBase, light: blueLight, dim: blueDim },
+  green: { base: greenBase, light: greenLight, dim: greenDim },
+  orange: { base: orangeBase, light: orangeLight, dim: orangeDim },
+  yellow: { base: yellowBase, light: yellowLight, dim: yellowDim }
+}
+
+// Font Sizes
+export const fontSizeMicro = '12px'
+export const fontSizeTiny = '13px'
+export const fontSizeSmall = '14px'
+export const fontSizeBase = '16px'
+export const fontSizeMedium = '18px'
+export const fontSizeLarge = '22px'
+
+export const fontSizes = {
+  micro: fontSizeMicro,
+  tiny: fontSizeTiny,
+  small: fontSizeSmall,
+  base: fontSizeBase,
+  medium: fontSizeMedium,
+  large: fontSizeLarge
+}
+
+// Font Weights
+export const fontWeightNormal = 400
+export const fontWeightMedium = 500
+export const fontWeightBold = 700
+export const fontWeightHeavy = 900
+
+export const fontWeights = {
+  normal: fontWeightNormal,
+  medium: fontWeightMedium,
+  bold: fontWeightBold,
+  heavy: fontWeightHeavy
+}
+
+// Line Heights
+export const lineHeightMicro = '15px'
+export const lineHeightTiny = '16px'
+export const lineHeightSmall = '20px'
+export const lineHeightBase = '24px'
+export const lineHeightMedium = '28px'
+export const lineHeightLarge = '32px'
+
+export const lineHeights = {
+  micro: lineHeightMicro,
+  tiny: lineHeightTiny,
+  small: lineHeightSmall,
+  base: lineHeightBase,
+  medium: lineHeightMedium,
+  large: lineHeightLarge
+}

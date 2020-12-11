@@ -1,11 +1,11 @@
-export type ThemeTypes = 'light' | 'dark'
+export type ThemeTypes = 'light'
 
 export type GrayscaleColors =
   | 'dark'
   | 'primary'
   | 'secondary'
-  | 'border'
-  | 'background'
+  | 'tertiary'
+  | 'lightGray'
 
 export type UiColors = 'navy' | 'blue' | 'green' | 'orange' | 'yellow'
 
