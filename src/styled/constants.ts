@@ -6,7 +6,8 @@ export const grayscaleSecondary = '#858896'
 export const grayscaleTertiary = '#E0E2E7'
 export const grayscaleLightGray = '#F4F5FA'
 export const grayscaleWhite = '#FFFFFF'
-export const grayscales = {
+
+export const grayscaleColors = {
   black: grayscaleBlack,
   dark: grayscaleDark,
   primary: grayscalePrimary,
@@ -90,4 +91,21 @@ export const lineHeights = {
   base: lineHeightBase,
   medium: lineHeightMedium,
   large: lineHeightLarge
+}
+
+// Letter Spacings
+export const letterSpacingMicro = '0'
+export const letterSpacingTiny = '0'
+export const letterSpacingSmall = '0'
+export const letterSpacingBase = '-0.001em'
+export const letterSpacingMedium = '-0.0025em'
+export const letterSpacingLarge = '-0.003em'
+
+export const letterSpacings = {
+  micro: letterSpacingMicro,
+  tiny: letterSpacingTiny,
+  small: letterSpacingSmall,
+  base: letterSpacingBase,
+  medium: letterSpacingMedium,
+  large: letterSpacingLarge
 }
