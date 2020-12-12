@@ -19,24 +19,24 @@ export const grayscaleColors = {
 
 // UI Colors
 export const navyBase = '#0052CC'
-export const navyLight = '#D9E5F8'
-export const navyDim = 'rgba(0, 82, 204, 0.15)'
+export const navyLight = '#F2F6FC'
+export const navyDim = 'rgba(0, 82, 204, 0.05)'
 
 export const blueBase = '#0086FF'
 export const blueLight = '#D9EDFF'
-export const blueDim = 'rgba(0, 134, 255, 0.15)'
+export const blueDim = 'rgba(0, 134, 255, 0.05)'
 
 export const greenBase = '#22C58B'
 export const greenLight = '#DBF6EC'
-export const greenDim = 'rgba(34, 197, 139, 0.15)'
+export const greenDim = 'rgba(34, 197, 139, 0.05)'
 
 export const orangeBase = '#E95432'
 export const orangeLight = '#FCE6E0'
-export const orangeDim = 'rgba(233, 84, 50, 0.15)'
+export const orangeDim = 'rgba(233, 84, 50, 0.05)'
 
 export const yellowBase = '#FCBC1D'
 export const yellowLight = '#FFF5DD'
-export const yellowDim = 'rgba(252, 188, 29, 0.15)'
+export const yellowDim = 'rgba(252, 188, 29, 0.05)'
 
 export const uiColors = {
   navy: { base: navyBase, light: navyLight, dim: navyDim },

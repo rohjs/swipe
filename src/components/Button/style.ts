@@ -1,6 +1,8 @@
 import { css } from 'styled-components'
 
 import { ButtonSizes, ButtonVariants } from 'types/button'
+import { setTextStyle } from 'styled/utils'
+import { grayscaleColors, uiColors } from 'styled/constants'
 
 export const commonButtonStyle = css`
   display: inline-flex;
@@ -11,9 +13,10 @@ export const commonButtonStyle = css`
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 15px;
   font-weight: 400;
-  border: 0;
+  border: 1px solid transparent;
   border-radius: 6px;
   box-shadow: none;
+  cursor: pointer;
 
   &:focus,
   &:active {
@@ -22,17 +25,25 @@ export const commonButtonStyle = css`
   }
 
   &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
   }
 `
 
 export const primaryButtonStyle = css`
-  background-color: blue;
-  color: white;
+  color: ${grayscaleColors.white};
+  background-color: ${uiColors.navy.base};
 `
 
 export const secondaryButtonStyle = css`
-  background-color: red;
-  color: white;
+  color: ${uiColors.navy.base};
+  background-color: ${uiColors.navy.light};
+`
+
+export const ghostButtonStyle = css`
+  color: ${uiColors.navy.base};
+  background-color: ${grayscaleColors.white};
+  border-color: ${grayscaleColors.tertiary};
 `
 
 export function selectButtonVariant(variant: ButtonVariants) {
@@ -41,22 +52,28 @@ export function selectButtonVariant(variant: ButtonVariants) {
       return primaryButtonStyle
     case 'secondary':
       return secondaryButtonStyle
+    case 'ghost':
+      return ghostButtonStyle
     default:
-      return
+      return ghostButtonStyle
   }
 }
 
 export const bigButtonStyle = css`
+  ${setTextStyle('small', 'normal')};
   height: 50px;
+  padding: 0 16px;
+  border-radius: 8px;
 `
 
 export const mediumButtonStyle = css`
+  ${setTextStyle('tiny', 'normal')};
   height: 44px;
 `
 
 export const smallButtonStyle = css`
+  ${setTextStyle('tiny', 'normal')};
   height: 36px;
-  font-size: 14px;
 `
 
 export function selectButtonSize(size?: ButtonSizes) {

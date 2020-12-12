@@ -1,4 +1,4 @@
-export type ButtonVariants = 'primary' | 'secondary'
+export type ButtonVariants = 'primary' | 'secondary' | 'ghost'
 export type ButtonSizes = 'big' | 'medium' | 'small'
 
 export interface StyledButtonProps {

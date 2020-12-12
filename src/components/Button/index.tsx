@@ -21,8 +21,8 @@ const StyledButton = styled.button<StyledButtonProps>`
 `
 
 export interface ButtonProps {
-  type: 'button' | 'submit' | 'reset'
   variant: ButtonVariants
+  type?: 'button' | 'submit' | 'reset'
   size?: ButtonSizes
   fullWidth?: boolean
   onClick?: (e: MouseEvent) => void
@@ -37,15 +37,15 @@ export interface ButtonProps {
 }
 
 export const Button = ({
-  type,
+  type = 'button',
   variant,
-  size,
-  fullWidth,
+  size = 'medium',
+  fullWidth = false,
   onClick,
   onMouseUp,
   onMouseDown,
   onBlur,
-  disabled,
+  disabled = false,
   name,
   value,
   className,
