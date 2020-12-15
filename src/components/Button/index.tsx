@@ -1,30 +1,30 @@
 import React, { FocusEvent, MouseEvent } from 'react'
 import styled from 'styled-components'
 
-import {
-  ButtonSizes,
-  ButtonVariants,
-  StyledButtonProps
-} from '../../types/button'
+import { FormSizes } from 'types/forms'
+import { selectFormSize } from 'styled/forms'
 import {
   commonButtonStyle,
   selectButtonVariant,
-  selectButtonSize
-} from './style'
+  ButtonVariants
+} from './styled'
+
+export interface StyledButtonProps {
+  variant: ButtonVariants
+  size?: FormSizes
+  fullWidth?: boolean
+}
 
 const StyledButton = styled.button<StyledButtonProps>`
   ${commonButtonStyle}
   ${({ variant }) => selectButtonVariant(variant)}
-  ${({ size }) => selectButtonSize(size)}
+  ${({ size }) => selectFormSize(size)}
 
   width: ${({ fullWidth }) => (fullWidth ? '100%' : 'auto')};
 `
 
-export interface ButtonProps {
-  variant: ButtonVariants
+export interface ButtonProps extends StyledButtonProps {
   type?: 'button' | 'submit' | 'reset'
-  size?: ButtonSizes
-  fullWidth?: boolean
   onClick?: (e: MouseEvent) => void
   onMouseUp?: (e: MouseEvent) => void
   onMouseDown?: (e: MouseEvent) => void
