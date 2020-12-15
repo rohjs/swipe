@@ -1,18 +1,22 @@
 import { css } from 'styled-components'
 
-import { ButtonSizes, ButtonVariants } from 'types/button'
-import { setTextStyle } from 'styled/utils'
 import { grayscaleColors, uiColors } from 'styled/constants'
+
+export type ButtonVariants =
+  | 'primary'
+  | 'secondary'
+  | 'ghost'
+  | 'dark'
+  | 'danger'
+  | 'success'
+  | 'blue'
+  | 'yellow'
 
 export const commonButtonStyle = css`
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 0 8px;
-  font-family: Inter, --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
   border: 1px solid transparent;
   border-radius: 6px;
   box-shadow: none;
@@ -46,6 +50,31 @@ export const ghostButtonStyle = css`
   border-color: ${grayscaleColors.tertiary};
 `
 
+export const darkButtonStyle = css`
+  color: ${grayscaleColors.white};
+  background-color: ${grayscaleColors.dark};
+`
+
+export const dangerButtonStyle = css`
+  color: ${grayscaleColors.white};
+  background-color: ${uiColors.orange.base};
+`
+
+export const successButtonStyle = css`
+  color: ${grayscaleColors.white};
+  background-color: ${uiColors.green.base};
+`
+
+export const blueButtonStyle = css`
+  color: ${grayscaleColors.white};
+  background-color: ${uiColors.blue.base};
+`
+
+export const yellowButtonStyle = css`
+  color: ${grayscaleColors.white};
+  background-color: ${uiColors.yellow.base};
+`
+
 export function selectButtonVariant(variant: ButtonVariants) {
   switch (variant) {
     case 'primary':
@@ -54,37 +83,17 @@ export function selectButtonVariant(variant: ButtonVariants) {
       return secondaryButtonStyle
     case 'ghost':
       return ghostButtonStyle
+    case 'dark':
+      return darkButtonStyle
+    case 'danger':
+      return dangerButtonStyle
+    case 'success':
+      return successButtonStyle
+    case 'blue':
+      return blueButtonStyle
+    case 'yellow':
+      return yellowButtonStyle
     default:
       return ghostButtonStyle
-  }
-}
-
-export const bigButtonStyle = css`
-  ${setTextStyle('small', 'normal')};
-  height: 50px;
-  padding: 0 16px;
-  border-radius: 8px;
-`
-
-export const mediumButtonStyle = css`
-  ${setTextStyle('tiny', 'normal')};
-  height: 44px;
-`
-
-export const smallButtonStyle = css`
-  ${setTextStyle('tiny', 'normal')};
-  height: 36px;
-`
-
-export function selectButtonSize(size?: ButtonSizes) {
-  switch (size) {
-    case 'big':
-      return bigButtonStyle
-    case 'medium':
-      return mediumButtonStyle
-    case 'small':
-      return smallButtonStyle
-    default:
-      return smallButtonStyle
   }
 }
