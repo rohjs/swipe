@@ -26,9 +26,5 @@ export function setTextColor(type: GrayscaleColors) {
 }
 
 export function rgba(hex: string, opacity = 1): string {
-  let color = hex
-  if (hex in grayscaleColors) {
-    color = grayscaleColors[hex as GrayscaleColors]
-  }
-  return hexToRgba(color, opacity)
+  return hexToRgba(hex, opacity)
 }

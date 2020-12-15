@@ -7,20 +7,23 @@ import { commonInputStyle, InputVariants, selectInputVariant } from './styled'
 
 export interface StyledInputProps {
   variant: InputVariants
-  size?: FormSizes
+  inputSize?: FormSizes
   fullWidth?: boolean
 }
 
 const StyledInput = styled.input<StyledInputProps>`
   ${commonInputStyle}
   ${({ variant }) => selectInputVariant(variant)}
-  ${({ size }) => selectFormSize(size)}
+  ${({ inputSize }) => selectFormSize(inputSize)}
 
   width: ${({ fullWidth }) => (fullWidth ? '100%' : 'auto')};
 `
 
-export interface InputProps extends StyledInputProps {
-  type?: string
+export interface InputProps {
+  type?: 'text' | 'email' | 'tel' | 'url' | 'number'
+  variant: InputVariants
+  size?: FormSizes
+  fullWidth?: boolean
   id: string
   onChange?: (e: ChangeEvent) => void
   onBlur?: (e: FocusEvent) => void
@@ -51,6 +54,7 @@ export const Input = ({
       id={id}
       type={type}
       variant={variant}
+      inputSize={size}
       fullWidth={fullWidth}
       onChange={onChange}
       onBlur={onBlur}

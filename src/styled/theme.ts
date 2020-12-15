@@ -6,8 +6,9 @@ export const lightThemes: BaseTheme = {
       dark: '#1B1C32',
       primary: '#3F4150',
       secondary: '#858896',
-      border: '#E0E2E7',
-      background: '#F4F5FA'
+      tertiary: '#E0E2E7',
+      lightGray: '#F4F5FA',
+      white: '#FFFFFF'
     },
     ui: {
       navy: '#0052CC',

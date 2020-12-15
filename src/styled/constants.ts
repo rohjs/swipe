@@ -1,6 +1,3 @@
-import { GrayscaleColors, TypeScales, UiColors } from 'types/theme'
-import { rgba } from './utils'
-
 // Grayscales
 export const grayscaleDark = '#1B1C32'
 export const grayscalePrimary = '#3F4150'
@@ -9,7 +6,7 @@ export const grayscaleTertiary = '#E0E2E7'
 export const grayscaleLightGray = '#F4F5FA'
 export const grayscaleWhite = '#FFFFFF'
 
-export const grayscaleColors: Record<GrayscaleColors, string> = {
+export const grayscaleColors = {
   dark: grayscaleDark,
   primary: grayscalePrimary,
   secondary: grayscaleSecondary,
@@ -21,28 +18,25 @@ export const grayscaleColors: Record<GrayscaleColors, string> = {
 // UI Colors
 export const navyBase = '#0052CC'
 export const navyLight = '#F2F6FC'
-export const navyDim = rgba('#0052CC', 0.05)
+export const navyDim = 'rgba(0, 82, 204, 0.05)'
 
 export const blueBase = '#0086FF'
 export const blueLight = '#D9EDFF'
-export const blueDim = rgba('#0086FF', 0.05)
+export const blueDim = 'rgba(0, 134, 255, 0.05)'
 
 export const greenBase = '#22C58B'
 export const greenLight = '#DBF6EC'
-export const greenDim = rgba('#22C58B', 0.05)
+export const greenDim = 'rgba(34, 197, 139, 0.05)'
 
 export const orangeBase = '#E95432'
 export const orangeLight = '#FCE6E0'
-export const orangeDim = rgba('#E95432', 0.05)
+export const orangeDim = 'rgba(233, 84, 50, 0.05)'
 
 export const yellowBase = '#FCBC1D'
 export const yellowLight = '#FFF5DD'
-export const yellowDim = rgba('#FCBC1D', 0.05)
+export const yellowDim = 'rgba(252, 188, 29, 0.05)'
 
-export const uiColors: Record<
-  UiColors,
-  { base: string; light: string; dim: string }
-> = {
+export const uiColors = {
   navy: { base: navyBase, light: navyLight, dim: navyDim },
   blue: { base: blueBase, light: blueLight, dim: blueDim },
   green: { base: greenBase, light: greenLight, dim: greenDim },
@@ -58,7 +52,7 @@ export const fontSizeBase = '16px'
 export const fontSizeMedium = '18px'
 export const fontSizeLarge = '22px'
 
-export const fontSizes: Record<TypeScales, string> = {
+export const fontSizes = {
   micro: fontSizeMicro,
   tiny: fontSizeTiny,
   small: fontSizeSmall,
@@ -88,7 +82,7 @@ export const lineHeightBase = '24px'
 export const lineHeightMedium = '28px'
 export const lineHeightLarge = '32px'
 
-export const lineHeights: Record<TypeScales, string> = {
+export const lineHeights = {
   micro: lineHeightMicro,
   tiny: lineHeightTiny,
   small: lineHeightSmall,
@@ -105,7 +99,7 @@ export const letterSpacingBase = '-0.001em'
 export const letterSpacingMedium = '-0.0025em'
 export const letterSpacingLarge = '-0.003em'
 
-export const letterSpacings: Record<TypeScales, string> = {
+export const letterSpacings = {
   micro: letterSpacingMicro,
   tiny: letterSpacingTiny,
   small: letterSpacingSmall,

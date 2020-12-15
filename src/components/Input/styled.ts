@@ -26,7 +26,7 @@ export const commonInputStyle = css`
   }
 
   &::placeholder {
-    color: ${rgba('secondary', 0.75)};
+    color: ${rgba(grayscaleColors.secondary, 0.75)};
   }
 `
 
