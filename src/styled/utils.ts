@@ -1,4 +1,5 @@
 import { css } from 'styled-components'
+import hexToRgba from 'hex-to-rgba'
 
 import {
   grayscaleColors,
@@ -22,4 +23,12 @@ export function setTextColor(type: GrayscaleColors) {
   return css`
     color: ${grayscaleColors[type]};
   `
+}
+
+export function rgba(hex: string, opacity = 1): string {
+  let color = hex
+  if (hex in grayscaleColors) {
+    color = grayscaleColors[hex as GrayscaleColors]
+  }
+  return hexToRgba(color, opacity)
 }
