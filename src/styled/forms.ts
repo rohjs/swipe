@@ -5,9 +5,9 @@ import { setTextStyle } from './utils'
 
 export const bigFormStyle = css`
   ${setTextStyle('small', 'normal')};
-  height: 50px;
-  padding: 0 16px;
-  border-radius: 8px;
+  height: 48px;
+  padding: 0 12px;
+  border-radius: 6px;
 `
 
 export const mediumFormStyle = css`
