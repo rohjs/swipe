@@ -18,14 +18,14 @@ export default {
   }
 } as Meta
 
-export const DefaultInput = Template.bind({})
-DefaultInput.args = {
+export const Default = Template.bind({})
+Default.args = {
   size: 'big',
   placeholder: 'Placeholder'
 }
 
-export const FilledInput = Template.bind({})
-FilledInput.args = {
+export const Filled = Template.bind({})
+Filled.args = {
   variant: 'filled',
   size: 'medium',
   placeholder: 'Placeholder'

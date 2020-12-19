@@ -37,7 +37,7 @@ export const defaultInputStyle = css`
 
 export const filledInputStyle = css`
   color: ${grayscaleColors.primary};
-  background-color: ${grayscaleColors.lightGray};
+  background-color: ${rgba(grayscaleColors.lightGray, 0.8)};
 `
 
 export function selectInputVariant(variant: InputVariants) {

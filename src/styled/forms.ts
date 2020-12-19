@@ -11,7 +11,7 @@ export const bigFormStyle = css`
 `
 
 export const mediumFormStyle = css`
-  ${setTextStyle('tiny', 'normal')};
+  ${setTextStyle('small', 'normal')};
   height: 44px;
   padding: 0 12px;
   border-radius: 6px;
